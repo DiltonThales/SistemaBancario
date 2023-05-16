@@ -6,9 +6,12 @@ public class Funcionario {
     protected double salario;
 
     public double calcularBonificacao(){
-        return salario * 0.10;
+        return salario * 0.15;
     }
 
+    public double calcularBonificacao(double bonus){
+        return  this.calcularBonificacao() + bonus;
+    }
 
     public String getNome() {
         return nome;
@@ -20,5 +23,9 @@ public class Funcionario {
 
     public void setNome(String nome) {
         this.nome = nome;
+    }
+
+    public void setSalario(double salario) {
+        this.salario = salario;
     }
 }

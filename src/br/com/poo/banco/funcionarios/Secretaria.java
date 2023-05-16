@@ -8,11 +8,10 @@ public class Secretaria extends Funcionario{
         this.salario = salario;
         this.registro = registro;
     }
-
+    @Override
     public double calcularBonificacao(){
         return super.calcularBonificacao() + 200.0;
     }
-
 
 
 }
